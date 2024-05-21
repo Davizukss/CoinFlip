@@ -21,9 +21,7 @@ namespace CoinFlip.Models
         {
             int ladoSorteado = new Random().Next(2);
             Lado = ladoSorteado == 0 ? "cara" : "coroa";
-            string resultado = Lado == ladoEscolhido ?
-                $"Parabéns, você pediu {ladoEscolhido} e deu {Lado}" :
-                $"Que pena, você pediu {ladoEscolhido} e deu {Lado}";
+            string resultado = Lado == ladoEscolhido ? $"Parabéns, você pediu {ladoEscolhido} e deu {Lado}" : $"Que Pena, você pediu {ladoEscolhido} e deu {Lado}";
             return (resultado);
         }
     }
